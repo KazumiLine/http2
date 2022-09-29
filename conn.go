@@ -628,6 +628,7 @@ loop:
 				}
 			}
 
+			fmt.Println(c.frameWriter.buf)
 			err = c.frameWriter.WriteFrame(frame)
 
 			if flush {
